@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/wikipedia.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.production.css">
+    <title>My first html page</title>
+</head>
+
+<body>
+    <div class="page-content">
+        <header class="page-header">
+            <img src="./img/portfolio_logo1.jpg" alt="logo" height="50px" class="page-header__item">
+            <nav class="main-navigation page-header__item">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation"><a href="./index.html" role="menuitem"
+                            class="navigation-list__item">Home</a></li>
+                    <li role="presentation"><a href="./about.html" role="menuitem" class="navigation-list__item">About
+                            me</a></li>
+                    <li role="presentation"><a href="./contact.html" role="menuitem"
+                            class="navigation-list__item--active">Contact</a></li>
+                    <li role="presentation"><a href="./work.html" role="menuitem" class="navigation-list__item">Work</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="contact">
+                <div>
+                    <h1>Timo Kujansuu</h1>
+                    <p>Streetname 123</p>
+                    <p>123456 Cityname</p>
+                    <p>Germany</p>
+                    <br>
+                    <a href="tel:+49 0123456789">Tel: +49 0123456789</a>
+                    <br>
+                    <a href="mailto:timokujansuu@gmail.com">Email: timokujansuu (at) gmail (dot) com</a>
+                    <br><br>
+                    <a href="mailto:timokujansuu@gmail.com">Contact me</a>
+                </div>
+                <br>
+                <form action="" id="contact-form">
+                    <p>Fields marked with * are required</p>
+                    <label for="email" class="standard-label">*E-mail: </label>
+                    <input type="email" id="email" required>
+                    <label for="telephone" class="standard-label">Telephone: </label>
+                    <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                    <label for="message" class="standard-label">*Message: </label>
+                    <textarea name="message" id="message" maxlength="240" required></textarea>
+                    <input type="submit" class="button" value="Send message">
+                </form>
+            </div>
+        </main>
+        <footer class="page-footer">
+            <p>Find me on</p>
+            <br>
+            <div class="social-media">
+                <a href="#" target="_blank"><img src="./img/211904_social_github_icon.svg" alt="link to github"
+                        class="page-footer__icon"></a>
+                <a href="#" target="_blank"><img src="./img/104501_twitter_bird_icon.svg" alt="link to twitter"
+                        class="page-footer__icon"></a>
+                <a href="#" target="_blank"><img src="./img/216394_linkedin_social_icon.svg" alt="link to linkedin"
+                        class="page-footer__icon"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/tota11y.min.js"></script>
+</body>
+
+</html>
