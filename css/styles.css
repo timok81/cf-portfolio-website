@@ -227,6 +227,7 @@
 
  .work h1 {
      align-self: self-start;
+     padding-left: 15px;
  }
 
  .page-footer {
@@ -307,7 +308,7 @@
      background-color: var(--worksample-desc-bg-color);
      border: 1px solid var(--worksample-border-color);
      border-radius: var(--border-radius-primary);
-     min-height: 65%;
+     min-height: 64%;
      height: auto;
      top: 8px;
      left: 8px;
