@@ -184,7 +184,7 @@ button:visited {
 }
 
 main {
-    padding: 0 32px;
+    padding: 0;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
@@ -260,11 +260,11 @@ main {
 
 .contact h1,
 .contact h2 {
-   margin: 0;
+    margin: 0;
 }
 
 .contact h2 {
-   margin-top: 8px;
+    margin-top: 8px;
 }
 
 form p {
@@ -566,7 +566,7 @@ textarea {
     }
 
     h2 {
-       font-size: 18px;
+        font-size: 18px;
     }
 }
 
@@ -591,6 +591,7 @@ textarea {
         -webkit-box-flex: 0;
             -ms-flex: 0 1 auto;
                 flex: 0 1 auto;
+        padding-bottom: 0;
     }
 
     .page-header__item:last-child {
@@ -611,27 +612,29 @@ textarea {
         justify-items: center;
         min-width: 0;
         text-align: center;
+        font-size: 1em;
+    }
+
+    .profile h1 {
+       font-size: 22px;
     }
 
     .profile__portrait {
         float: none;
         margin: 16px 0;
-        width: 150px;
-    }
-
-    .about {
-        width: 100%;
+        width: 175px;
     }
 
     .about h1 {
         -ms-grid-column-align: center;
             justify-self: center;
+        margin-top: 0;
     }
 
     .about .button {
-       -ms-grid-column-align: center;
-           justify-self: center;
-       display: block;
+        -ms-grid-column-align: center;
+            justify-self: center;
+        display: block;
     }
 
     .about div {
@@ -648,31 +651,33 @@ textarea {
                 align-items: center;
         gap: 0;
         max-width: 100%;
-        ;
     }
 
     .contact div {
-       border-bottom: 1px solid gray;
-       margin: 0;
-       padding: 0 0 16px 0;
-       width: 100%;
+        border-bottom: 1px solid gray;
+        margin: 0;
+        padding: 0 0 16px 0;
+        width: 100%;
     }
 
+    .profile,
+    .about,
     input,
     textarea {
-        width: 250px;
+        width: 80vw;
     }
 
     .work {
-        max-width: 100%;
-        min-width: 90%;
+        max-width: 80vw;
+        min-width: 200px;
     }
 
     .work h1 {
-       padding-left: 0;
-       -ms-flex-item-align: center;
-           -ms-grid-row-align: center;
-           align-self: center;
+        padding-left: 0;
+        margin-top: 0;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
     }
 
     .grid {
@@ -681,7 +686,7 @@ textarea {
     }
 
     .grid__item {
-       margin: 0;
+        margin: 0;
     }
 
 }

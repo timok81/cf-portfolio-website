@@ -160,7 +160,7 @@
  }
 
  main {
-     padding: 0 32px;
+     padding: 0;
      flex: 1 1 auto;
      display: flex;
      flex-direction: column;
@@ -210,12 +210,12 @@
 
  .contact h1,
  .contact h2 {
-    margin: 0;
+     margin: 0;
  }
 
-.contact h2 {
-    margin-top: 8px;
-}
+ .contact h2 {
+     margin-top: 8px;
+ }
 
  form p {
      font-size: 0.8em;
@@ -423,7 +423,7 @@
      }
 
      h2 {
-        font-size: 18px;
+         font-size: 18px;
      }
  }
 
@@ -437,6 +437,7 @@
          align-items: center;
          justify-content: center;
          flex: 0 1 auto;
+         padding-bottom: 0;
      }
 
      .page-header__item:last-child {
@@ -451,25 +452,27 @@
          justify-items: center;
          min-width: 0;
          text-align: center;
+         font-size: 1em;
+     }
+
+     .profile h1 {
+        font-size: 22px;
      }
 
      .profile__portrait {
          float: none;
          margin: 16px 0;
-         width: 150px;
-     }
-
-     .about {
-         width: 100%;
+         width: 175px;
      }
 
      .about h1 {
          justify-self: center;
+         margin-top: 0;
      }
 
      .about .button {
-        justify-self: center;
-        display: block;
+         justify-self: center;
+         display: block;
      }
 
      .about div {
@@ -481,29 +484,31 @@
          align-items: center;
          gap: 0;
          max-width: 100%;
-         ;
      }
 
      .contact div {
-        border-bottom: 1px solid gray;
-        margin: 0;
-        padding: 0 0 16px 0;
-        width: 100%;
+         border-bottom: 1px solid gray;
+         margin: 0;
+         padding: 0 0 16px 0;
+         width: 100%;
      }
 
+     .profile,
+     .about,
      input,
      textarea {
-         width: 250px;
+         width: 80vw;
      }
 
      .work {
-         max-width: 100%;
-         min-width: 90%;
+         max-width: 80vw;
+         min-width: 200px;
      }
 
      .work h1 {
-        padding-left: 0;
-        align-self: center;
+         padding-left: 0;
+         margin-top: 0;
+         align-self: center;
      }
 
      .grid {
@@ -511,7 +516,7 @@
      }
 
      .grid__item {
-        margin: 0;
+         margin: 0;
      }
 
  }
