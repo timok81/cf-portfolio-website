@@ -14,8 +14,8 @@
 html {
     overflow-x: hidden;
     margin-right: calc(100% - 100vw);
-  }
-  
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -209,13 +209,21 @@ main {
             flex: 0 1 auto;
     min-width: 600px;
     max-width: 700px;
+    font-size: 1.1em;
+}
+
+.profile h1 {
+   font-size: 2.3em;
+   margin-top: 0;
+   margin-bottom: 0;
 }
 
 .profile__portrait {
     float: left;
     width: 250px;
     margin-right: 40px;
-    border-radius: 50%;
+    margin-top: 16px;
+    border-radius: 6px;
 }
 
 .about {
@@ -247,10 +255,14 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     gap: 64px;
+}
+
+.contact h1 {
+    margin-top: 0;
 }
 
 form p {
@@ -278,13 +290,15 @@ form .button {
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;;
+            justify-content: center;
+    ;
 }
 
 .work h1 {
     -ms-flex-item-align: self-start;
         -ms-grid-row-align: self-start;
         align-self: self-start;
+    padding-left: 15px;
 }
 
 .page-footer {
@@ -399,7 +413,7 @@ form .button {
     background-color: white;
     border: 1px solid rgb(231, 231, 231);
     border-radius: 6px;
-    min-height: 65%;
+    min-height: 64%;
     height: auto;
     top: 8px;
     left: 8px;
@@ -510,6 +524,25 @@ label {
             animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+
+label {
+    margin-bottom: 4px;
+}
+
+input,
+textarea {
+    margin: 0;
+    padding: 4px;
+    width: 300px;
+    margin-bottom: 16px;
+    border: 1px solid gray;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
 @media all and (max-width: 1024px) {
     .grid {
         display: -ms-grid;
@@ -565,6 +598,7 @@ label {
     }
 
     .profile__portrait {
+       float: none;
         margin: 0 auto;
     }
 
@@ -584,7 +618,8 @@ label {
         -webkit-box-align: start;
             -ms-flex-align: start;
                 align-items: start;
-        gap: 16px;
+        gap: 0;
+        margin-top: 32px;
     }
 
     .work {
