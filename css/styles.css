@@ -226,6 +226,16 @@
      margin-top: 16px;
  }
 
+.input-wrapper {
+    margin-bottom: 32px;
+}
+
+ .error-message {
+    color: red;
+    font-size: 0.8em;
+    position: absolute;
+}
+
  .work {
      display: flex;
      min-width: 60%;
@@ -398,7 +408,6 @@
      margin: 0;
      padding: 4px;
      width: 300px;
-     margin-bottom: 16px;
      border: 1px solid gray;
  }
 
@@ -486,7 +495,7 @@
          max-width: 100%;
      }
 
-     .contact div {
+     .contact > div {
          border-bottom: 1px solid gray;
          margin: 0;
          padding: 0 0 16px 0;

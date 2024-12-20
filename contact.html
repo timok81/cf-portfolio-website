@@ -51,12 +51,18 @@
                     <h2>Contact form</h2>
                     <p>Fields marked with * are required</p>
                     <br>
-                    <label for="email" class="standard-label">*E-mail: </label>
-                    <input type="email" id="email" required>
-                    <label for="telephone" class="standard-label">Telephone: </label>
-                    <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-                    <label for="message" class="standard-label">*Message: </label>
-                    <textarea name="message" id="message" maxlength="240" required></textarea>
+                    <div class="input-wrapper">
+                        <label for="email" class="standard-label">*E-mail: </label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="telephone" class="standard-label">Telephone: </label>
+                        <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="message" class="standard-label">*Message: </label>
+                        <textarea name="message" id="message" maxlength="240" required></textarea>
+                    </div>
                     <input type="submit" class="button" value="Send message">
                 </form>
             </div>
@@ -74,6 +80,7 @@
             </div>
         </footer>
     </div>
+    <script src="./js/form-validate.js"></script>
     <script src="./js/tota11y.min.js"></script>
 </body>
 
